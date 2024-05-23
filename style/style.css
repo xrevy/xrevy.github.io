@@ -28,16 +28,23 @@ p {
     font-size: larger !important;
 }
 
-#landing-content .container {
-    width: 100%;
-    padding-left: 20%;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-}
-
 #landing-content {
-    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+#landing-content .col-5 {
+    max-width: 45%;
+}
+.additional-heading h2 {
+    margin-top: -2vw;
+}
+.intro-text {
+    font-size: 1vw;
+    margin-top: -100px;
+    margin-left: 15%;
 }
 
 .fixed-right {
