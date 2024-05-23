@@ -13,7 +13,6 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: #35589A !important;
-    overflow: hidden; /* Prevents scrolling */
 }
 
 body {
