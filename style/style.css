@@ -60,9 +60,9 @@ p {
 }
 
 #me, #bg-me {
-    image-rendering: -webkit-optimize-contrast; /* For Webkit browsers */
-    image-rendering: crisp-edges; /* For Firefox */
-    image-rendering: pixelated; /* For modern browsers */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 
 
@@ -78,7 +78,7 @@ h1 {
 
 .additional-heading {
     position: absolute;
-    transform: translate(50%, 50%); /* Shifts the additional text down and to the right */
+    transform: translate(25%, 40%);
 }
 
 .zoom-bg {
