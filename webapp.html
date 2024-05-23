@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <header class="fixed-top bg-fragment">
+      <img class="position-absolute end-0 top-0" src="media/pixel colours.svg" alt="pixel bg" style="width: 27%; max-width: 400px; min-width: 120px;">
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="z-index: 10;">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/me.png" width="65" alt=".stella">
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webapp.html">Webapplications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="software.html">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="creative.html">Creative</a>
+            </li>
+
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Webapplications</h1>
+                <p class="lead">In the span over the past years I've had the chance to work on a few webapplication projects. 
+                    Below are some of the projects I've worked on:</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- project sections-->
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Ginflut</h2>
+          <p class="lead">This university project was made in a group of 3. The main task was to implement 
+          a user system and a sql database in a shop-like environment. So we decided to create a Gin Shop 
+          called "Ginflut". 
+          </p>
+          <div id="coll1" style="display:none; margin-top: -10px;">
+            <p>
+              Users have the opportunity to sign up as a seller to create item pages and upload details and 
+              pictures of their products. Other than that, users can write comments of products to rate them.<br>
+              The backend was made in PHP and JavaScript, general functionality is written in JavaScript aswell.
+              For the styling we used mainly bootstrap, but the big showcase carousel on the landing page was made 
+              by us. <br>
+              The logo of Ginflut was also made by one of our group members.
+            </p>
+          </div>
+          <a href="#coll1" class="nav-toggle" style="color: rgb(116, 116, 181);">Read more..</a>
+          <div id="project-carousel" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner mx-auto" style="width: 80%;">
+              <div class="carousel-item active">
+                <img src="media/webapp/ginflut1.png" class="d-block w-100" width="" alt="Ginflut Langing">
+              </div>
+              <div id="" class="carousel-item container text-center ratio ratio-16x9">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/YkOqVC-3naE" allowfullscreen></iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <p>
+          <span class="badge text-bg-primary">PHP</span>
+          <span class="badge text-bg-primary">Javascript</span>
+          <span class="badge text-bg-primary">CSS</span>
+          <span class="badge text-bg-primary">SQL</span>
+          <span class="badge text-bg-primary">HTML</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- figma prototype -->
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Figma Prototyping - Apex Legends Gambling Addiction Protection</h2>
+          <p class="lead">This university project involved using the prototyping application Figma. The task for this 
+            exercise was to create a figma prototype that lets the user <u>don't</u> want to use an application.
+          </p>
+          <div id="coll2" style="display:none; margin-top: -10px;">
+            <p>
+              A lot of games offers players to buy so-called loot boxes that contain random items that the player can 
+              use to change the appearance of things in video games. All items have a different rarity, most of the time 
+              players will get common loot out of that loot boxes. The items most players want are pretty rare to get, 
+              requiring the player to buy more loot boxes to gamble for a better item. <br>
+              Since games that involve purchasable loot boxes are played by really young people as well, they might 
+              develop a insensitivity when it comes to gambling and spend more money than wanted or allowed. <br>
+              Apex Legends is a First Person Battle Royal Shooter that also offers players to buy loot boxes ("Apex Packs"). 
+              Since Apex Legends is played by younger people as well. To draw attention towards said issue, I tried to 
+              make a prototype that creates more hurdles before buying Apex Packs. The player has to conform their age,
+              that they are even eligible for gambling and if they are old enough, they have to go through an gambling 
+              addiction test. These instances and many warnings about the purchase and spending money should make the 
+              player question their decision about spending real money to a game for random cosmetical digital items. <br>
+              The video was edited in Adobe AfterFX.
+            </p>
+          </div>
+          <a href="#coll2" class="nav-toggle" style="color: rgb(116, 116, 181);">Read more..</a>
+          <div id="project-carousel" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner mx-auto" style="width: 80%;">
+              <div id="" class="carousel-item container text-center ratio ratio-16x9 active">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/BpLtFVedFys" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          <span class="badge text-bg-primary">Figma</span>
+          <span class="badge text-bg-primary">AfterFX</span>
+        </p>
+      </div>
+    </div>
+    
+    <div>
+      <img class="fixed-right bg-fragment" src="media/pixel colours4.svg" style="width: 10%; max-width: 200px; min-width: 70px;" alt="bg fragment">
+    </div>
+
+    <footer class="fixed-bottom bg-fragment mt-5">
+      <img src="media/pixel colours3.svg" alt="pixel bg" style="width: 40%; max-width: 700px; min-width: 200px;">
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="style/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <header class="bg-fragment">
+      <img class="position-absolute end-0 top-0" src="media/pixel colours.svg" alt="pixel bg" style="width: 27%; max-width: 400px; min-width: 120px;">
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="z-index: 10;">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/me.png" width="65" alt=".stella">
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webapp.html">Webapplications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="software.html">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="creative.html">Creative</a>
+            </li>
+
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12 mt-5">
+          <h2>Forgotten Darkness</h2>
+          <div class="badge text-bg-primary text-wrap mt-3" style="width: 6rem;">SS 2021</div>
+          <p class="lead mt-5">Forgotten Darkness was a Bachelor's Project, that was created in a group of 5. The main theme was 
+            "Nachtmahr" (Nightmar) and this project was supposed to be a story-driven horror game, in which you play
+            a person with amnesia, who wakes up in a huge mysterious villa. <br>
+          </p>
+          <div id="coll1" style="display:none; margin-top: -10px;">
+            <p>Every interface sprite is selfmade, I used Procreate for that, the music and a few soundeffects are also made by 
+              our group, like objects like the whole house, the ravens to name a few. <br>
+              The 3D models were created in Blender, we worked in the Unreal Engine. Character models were created by either 
+              the unreal technology Metahuman or DAZ (for the children models).<br>
+              My main task in this project was programming basic game functions and programming general game elements. 
+              Apart from that I designed the protagonist via "Metahumans", imported it into the game an added its functions, 
+              but I also created all the 2D game sprites, newspaper and created the sound of the radio announcements. <br>
+              The biggest Problem we ran into was the performance, we had to implement a better level/sequence streaming system 
+              for our game in order to make some certain sequences better playable. 
+            </p>
+          </div>
+          <a href="#coll1" class="nav-toggle" style="color: rgb(116, 116, 181);">Read more..</a>
+
+          <div id="fd-carousel" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner mx-auto" style="width: 80%;">
+              <div id="" class="carousel-item active container text-center ratio ratio-16x9">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/fHV3Noip2PU" allowfullscreen></iframe>
+              </div>
+              <div id="" class="carousel-item container text-center ratio ratio-16x9">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/t8Ehhxxx_cU" allowfullscreen></iframe>
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/fd1.png" class="d-block w-100" width="" alt="Ingame Content 1">
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/fd2.png" class="d-block w-100" width="" alt="Ingame Content 2">
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/fd3.png" class="d-block w-100" width="" alt="Ingame Content 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#fd-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#fd-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <p>
+          <span class="badge text-bg-primary">C++</span>
+          <span class="badge text-bg-primary">Unreal Engine 4</span>
+          <span class="badge text-bg-primary">Procreate</span>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Webcam Hero</h2>
+          <div class="badge text-bg-primary text-wrap mt-3" style="width: 6rem;">SS 2022</div>
+          <p class="lead mt-5">This project was initialized as a product that uses motion tracking in some way. 
+            I wanted to create a game that utilizes that. In the beginning I started developing in Unreal Engine 5, 
+            but had soon to dicover that I ran into problems with kernel access, so a quick decision had to be made.
+          </p>
+          <div id="coll2" style="display:none; margin-top: -10px;">
+            <p>After some research I came across a solution for another game engine that I've already used before: Godot.
+              This project contains two projects, one godot game project and one python motion detection that sends 
+              its output via a local UDP server to the game in process. <br>
+              The program searches for faces and compares the current face position on the y-axis with the previous 
+              y-position. If the current position is higher than the previous one, the application sends the signal 
+              for jumping, otherwise for crouching. If the threshold was not reached, the signal for "do nothing" 
+              will be sent. <br>
+              The game itself is a jump and run game that uses kamera input as a controller, if the player jumps, the 
+              game character jumps, same for crouching. <br>
+              The player character is an astronaut that has to evade octopus aliens. The game is set on the moon. <br>
+              The game assets were also made by me, I used aseprite to draw the pixelart. Just the music and the 
+              sound effects are downloaded CC0 files.
+            </p>
+          </div>
+          <a href="#coll2" class="nav-toggle" style="color: rgb(116, 116, 181);">Read more..</a>
+            
+          <div id="wh-carousel" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner mx-auto" style="width: 80%;">
+              <div class="carousel-item active">
+                <img src="media/games/wh1.png" class="d-block w-100" width="" alt="Webcam Hero Title">
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/wh2.png" class="d-block h-100 mx-auto" width="" alt="Game Assets">
+              </div>
+              <div id="" class="carousel-item container text-center ratio ratio-16x9">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/KWbSvw3TJXc" allowfullscreen></iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#wh-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wh-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <p>
+          <span class="badge text-bg-primary">Python</span>
+          <span class="badge text-bg-primary">Godot Engine 3.4</span>
+          <span class="badge text-bg-primary">Godotscript</span>
+          <span class="badge text-bg-primary">Aseprite</span>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Magical Quarters</h2>
+          <div class="badge text-bg-primary text-wrap mt-3" style="width: 6rem;">WS 2020/21</div>
+          <p class="lead mt-5">The first game project in general and the first time I got to use Unreal Engine. This 
+            project was supposed to teach us how to use Unreal Engine.
+          </p>
+          <div id="coll3" style="display:none; margin-top: -10px;">
+            <p>We worked in a group of seven. First, in order to begin this project, we created our game concept, 
+              followed by a detailed requirements analysis. Once that was done, we started planning our game
+              application. We used different of UML diagrams to plan the different aspects of the game 
+              (a few diagrams are seen in the carousel below). <br>
+              So our game should be a 3D rogue-like game, with different rooms, that get locked once the player enters 
+              it to clear it from enemies. In the end the player hast to defeat a boss in order to win the game. <br>
+              Game assets like player character and enemy 3D models were created by us just like game icons, 
+              loading screens and background pictures. <br>
+              This project teached us a lot about project preparation and planning, game development and team composition.
+              While we had to manage who has to do what, we suddenly faced the problem of missing three teammates further 
+              in the development phase so we had to adjust our plannings. <br>
+            </p>
+          </div>
+          <a href="#coll3" class="nav-toggle" style="color: rgb(116, 116, 181);">Read more..</a>
+            
+          <div id="mq-carousel" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner mx-auto" style="width: 80%;">
+              <div class="carousel-item active">
+                <img src="media/games/mq5.jpg" class="d-block w-100" width="" alt="Title Screen">
+              </div>
+              <div id="" class="carousel-item container text-center ratio ratio-16x9">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/a01nUOR7mSE" allowfullscreen></iframe>
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/mq6.png" class="d-block w-100" width="" alt="Game Assets 1">
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/mq7.png" class="d-block w-100" width="" alt="Game Assets 2">
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/mq1.png" class="d-block w-100" width="" alt="UML 1">
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/mq3.png" class="d-block w-100 mx-auto" width="" alt="UML 2">
+              </div>
+              <div class="carousel-item">
+                <img src="media/games/mq4.png" class="d-block w-100 mx-auto" width="" alt="UML 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mq-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mq-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <p>
+          <span class="badge text-bg-primary">C++</span>
+          <span class="badge text-bg-primary">Unreal Engine 4</span>
+          <span class="badge text-bg-primary">Procreate</span>
+          <span class="badge text-bg-primary">UML diagrams</span>
+        </p>
+      </div>
+    </div>
+
+
+
+    
+    <div>
+        <img class="fixed-right bg-fragment" src="media/pixel colours4.svg" style="width: 10%; max-width: 200px; min-width: 70px;" alt="bg fragment">
+      </div>
+  
+      <footer class="bg-fragment">
+        <img src="media/pixel colours3.svg" alt="pixel bg" class="bottom-0 end-0" style="width: 40%; max-width: 700px; min-width: 200px;">
+      </footer>
+  
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="style/main.js"></script>
+    </body>
+  </html>

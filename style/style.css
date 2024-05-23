@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "pixeled";
+    src: url("/media/Pixeled.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "pixel_detail";
+    src: url("/media/pixel_detail.ttf") format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #35589A !important;
+}
+
+body {
+    font-family: "pixel_detail", sans-serif !important;
+    color: aliceblue !important;
+}
+
+h1, h2, h3, h4, li {
+    font-family: "pixeled", sans-serif !important;
+}
+
+p {
+    font-size: larger !important;
+}
+
+#landing-content .container {
+    width: 100%;
+    padding-left: 20%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+#landing-content {
+    margin-top: 5vh;
+}
+
+.fixed-right {
+    position: fixed;
+    top: 60%;
+    right: 0;
+    width: auto;
+    margin-right: 0;
+    max-height: 100vh;
+}
+
+.bg-fragment {
+    z-index: 2 !important;
+}
+
+#bg-me {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+#me, #bg-me {
+    image-rendering: -webkit-optimize-contrast; /* For Webkit browsers */
+    image-rendering: crisp-edges; /* For Firefox */
+    image-rendering: pixelated; /* For modern browsers */
+}
+
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.additional-heading {
+    position: absolute;
+    transform: translate(50%, 50%); /* Shifts the additional text down and to the right */
+}
+
+.zoom-bg {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .zoom-bg:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(https://placeimg.com/300/200/nature) no-repeat center;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+  }
+  
+  .zoom-bg:hover:before {
+    transform: scale(1.2);
+  }
+  
+  .zoom-img {
+    overflow: hidden;
+  }
+  
+  .zoom-img > img {  
+    object-fit: cover;
+    width: 200%;
+    height: 200%;
+    transition: all .3s ease-in-out;
+  }
+  
+  .zoom-img:hover > img {
+    transform: scale(1.2);
+  }
+
+  .bigger-image {
+    scale: 1.7;
+    display: block; /* Ensure it's displayed as a block-level element */
+    margin: 180px auto; /* Center the image horizontally */
+}

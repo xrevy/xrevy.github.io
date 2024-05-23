@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  
+  <body>
+    <header class="fixed-top bg-fragment">
+      <img class="position-absolute end-0 top-0" src="media/pixel colours.svg" alt="pixel bg" style="width: 27%; max-width: 400px; min-width: 120px;">
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="z-index: 10;">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+          <a class="navbar-brand" href="index.html">
+            <img src="media/me.png" width="65" alt=".stella">
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="games.html">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="webapp.html">Webapplications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="software.html">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="creative.html">Creative</a>
+            </li>
+
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <!-- Music Visualizer -->
+
+    <div class="container my-5">
+      <div class="row mb-5">
+        <h2>Music Vizualizer</h2>
+        <div class="badge text-bg-primary text-wrap mt-3" style="width: 6rem;">SS 2019</div>
+        <div class="row">
+          <p class="lead mt-5">This university project represents a music visualizer and was made in java based processing. 
+          </p>
+          <div id="coll3" style="display:none; margin-top: -10px;">
+            <p> This program takes a music file as input and analyzes its frequencies. Based on the values
+              of bass, mid and high frequencies, symbols and geometry are formed. <br>
+              The main visualization is a big triangle that moves to the frequencies. Each edge of the triangle represents 
+              either bass, mid or high frequency values. In the background there are different things to see. Depending on 
+              the chosen display modus, the user can see pyramids, spheres, rectangle planes or arches in the background. 
+              These "particles" are growing based of the sum of the frequencies, the louder an audio frame, the bigger 
+              the particles.<br>
+              The user can choose between non-copyrighted preset songs or can even upload their own song. If a song has ended, 
+              the next song will be played. <br>
+              The user can also choose the displaying mode and if they want to skip the song. <br>
+              (I apologize for the slow framerate)
+            </p>
+          </div>
+          <a href="#coll3" class="nav-toggle" style="color: rgb(116, 116, 181);">Read more..</a>
+          <div id="wh-carousel" class="carousel slide my-5" data-bs-ride="carousel">
+            <div class="carousel-inner mx-auto" style="width: 80%;">
+              <div id="" class="carousel-item container text-center ratio ratio-1x1 active">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/Am4yb3zzg38" allowfullscreen></iframe>
+              </div>
+              <div id="" class="carousel-item container text-center ratio ratio-1x1">
+                <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/_TfNnSeJN2o" allowfullscreen></iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#wh-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wh-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <p class="mb-5">
+          <span class="badge text-bg-primary">Java</span>
+          <span class="badge text-bg-primary">Processing</span>
+          <span class="badge text-bg-primary">Audio Analysis</span>
+        </p>
+      </div>
+    </div>
+
+
+
+    <!-- java algotithms-->
+
+
+    <div class="container my-5">
+      <div class="row mb-5">
+        <h2>Self-Sorting Lists and Sorting Algorithms</h2>
+        <div class="badge text-bg-primary text-wrap mt-3" style="width: 6rem;">SS 2019</div>
+        <div class="row">
+          <div class="col-md-7">
+            <p class="lead mt-5">While learning how to code in Java we had to do weekly assignments in this course. 
+              Part of that assignments were tasks like self-sorting lists and sorting algorithms. <br>
+              To use self-sorting lists we had to implement different methods to actually self-sort list elements.
+              These were Naive (no actual sorting, new elements just are inserted at the beginning of the list),
+              MF-Rule ("Move-to-Front", each element that is already in the list and should be inserted 
+              in the list, just gets moved to the front of the list, else like naive), 
+              T-Rule ("Transpose", each element that is already in the list and should be inserted 
+              in the list gets swapped with its predecessor, else live naive) and FC-Rule ("Frequency Count", each 
+              element in the list is sorted after its frequency, how often it is inserted to the list. The more an
+              element is tried to be inserted, the further to the front of the list this element is sorted).
+              Apart from that we had to know how many sorting algorithms would work, like bubble sort, insertion sort and quick sort for example. 
+              We've practically implemented the merge sort algorithm as an assignment. 
+            </p>
+          </div>
+          <div class="col-md-5 text-center my-auto">
+            <div class="ratio ratio-1x1">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3AA2sR0fCIY" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <p class="mb-5">
+          <span class="badge text-bg-primary">Java</span>
+          <span class="badge text-bg-primary">Sorting Algorithms</span>
+        </p>
+      </div>
+    </div>
+
+    
+    <div>
+        <img class="fixed-right bg-fragment" src="media/pixel colours4.svg" style="width: 10%; max-width: 200px; min-width: 70px;" alt="bg fragment">
+      </div>
+  
+      <footer class="fixed-bottom bg-fragment">
+        <img src="media/pixel colours3.svg" alt="pixel bg" style="width: 40%; max-width: 700px; min-width: 200px;">
+      </footer>
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="style/main.js"></script>
+    </body>
+  </html>
