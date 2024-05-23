@@ -35,7 +35,7 @@ p {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden; /* Prevents scrolling within this section */
+    overflow: hidden; /* Prevents scrolling */
 }
 
 .half-screen {
