@@ -25,11 +25,11 @@ import { initMusicVisualization } from "/music-js/music-visual.js";
     const configureButton = document.getElementById("configureButton");
 
     //file path to audio files
-    const fileNames = ["../music-files/victory.mp3", 
-    "../music-files/showreel.mp3", 
-    "../music-files/Roxanne_The_Police_Remix_by_FVE.mp3",
-    "../music-files/green-sky.mp3",
-    "../music-files/guitar-mellow-beat.mp3"
+    const fileNames = ["../media/music-files/victory.mp3", 
+    "../media/music-files/showreel.mp3", 
+    "../media/music-files/Roxanne_The_Police_Remix_by_FVE.mp3",
+    "../media/music-files/green-sky.mp3",
+    "../media/music-files/guitar-mellow-beat.mp3"
     ];
 
     let selectedVisualization;

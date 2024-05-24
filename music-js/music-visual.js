@@ -1,4 +1,4 @@
-import * as THREE from '../src/three.module.js';
+import * as THREE from '../style/three.module.js';
 import { initTriangle } from './triangle.js';
 import { initDraw } from './draw.js';
 import { initSquare } from './square.js';
