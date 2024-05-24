@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Art</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card mx-auto" style="width: 50%;">
+        <div class="card-body mx-auto mb-5 align-items-center">
+            <h5 class="card-title text-center">Music Art Settings</h5>
+
+            <!-- Select Visualization Type -->
+            <div class="mb-3">
+                <label for="visualizationType" class="form-label">Select Visualization Type:</label>
+                <select class="form-select" id="visualizationType" style="width: 300px;">
+                    <option selected disabled>Choose art style</option>
+                    <option value="draw">Music draws</option>
+                    <option value="triangle">Music Triangle</option>
+                    <option value="square">Music Squares</option>
+                </select>
+            </div>
+
+            <!-- explanation div-->
+            <div class="mb-3">
+                <p id="drawExplanation" class="alert alert-info" style="display: none; width: 300px;">
+                    The Draw visualization generates strokes, draws, based on the music. 
+                    Choose a song and see the brush of the music paint its picture.
+                </p>
+                <p id="triangleExplanation" class="alert alert-info" style="display: none; width: 300px;">
+                    The triangle visualization shows a triangle that moves based on the music analysis.
+                    But its not a always moving triangle, you'll be able to see the past triangle 
+                    positions aswell. It draws as triangle.
+                </p>
+                <p id="squareExplanation" class="alert alert-info" style="display: none; width: 300px;">
+                    The square visualization creates whilst the song is playing 81 squares. 
+                    The squares are bigger the louder the part of the song is when it is created. 
+                    Their colours are also mapped from the music analysis if high, mid and bass frequences.
+                </p>
+            </div>
+
+            <!-- Settings Container -->
+            <div class="container" id="settingsContainer" style="display:none;">
+                <!-- Music Select Section -->
+                <div id="musicSelect" class="mb-3">
+                    <h6 class="fw-bold">Music Selection:</h6>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="musicRadio" id="victory" value="0">
+                        <label class="form-check-label" for="victory">Victory</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="musicRadio" id="showreel" value="1">
+                        <label class="form-check-label" for="showreel">Showreel</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="musicRadio" id="roxanne" value="2">
+                        <label class="form-check-label" for="roxanne">Roxanne by FVE</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="musicRadio" id="greensky" value="3">
+                        <label class="form-check-label" for="greensky">Green Sky</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="musicRadio" id="guitar" value="4">
+                        <label class="form-check-label" for="guitar">Guitar Mellow Beat</label>
+                    </div>
+
+                    <div class="mt-3">
+                        <label class="form-label" for="customMusicFile">Or select your own music file:</label>
+                        <div class="row">
+                            <input type="file" class="form-control col" accept=".mp3, .wav" id="customMusicFile">
+                            <button class="btn btn-outline-warning mx-1 col-auto" type="button" id="clearMusicFile" disabled>X</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Background Settings -->
+                <div id="backgroundSettings" class="mb-3">
+                    <h6 class="fw-bold">Background Settings:</h6>
+
+                    <label class="form-label" for="backgroundType">Select Background Type:</label>
+                    <select class="form-select" id="backgroundType" style="width: 250px;">
+                        <option value="" selected disabled>Choose background style</option>
+                        <option value="dynamic">Dynamic Background</option>
+                        <option value="gradient">Gradient Background</option>
+                        <option value="simple">Simple Background</option>
+                    </select>
+
+                    <div id="dynamicExplanation" class="alert alert-info my-2" style="display: none; width: 300px;">
+                        If you choose the dynamic background, each second a part of the background will be generated.
+                        The colour of that part is based on the song analysis at that moment.
+                    </div>
+                    <div id="gradientExplanation" class="alert alert-info my-2" style="display: none; width: 300px;">
+                        If you choose the gradient background, you get to choose two colours the background is filled with.
+                    </div>
+                    <div id="colorExplanation" class="alert alert-info my-2" style="display: none; width: 300px;">
+                        You can choose a single coulor for the background using the color picker.
+                    </div>
+
+                    <!-- Gradient Background Colours -->
+                    <div id="gradientColors" style="display:none;">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-auto">
+                                <label for="gradientColor1">Color 1:</label>
+                                <input type="color" class="form-control form-control-color" id="gradientColor1" value="#000000" title="Choose color for the gradient">
+                            </div>
+                            <div class="col-auto">
+                                <label for="gradientColor2">Color 2:</label>
+                                <input type="color" class="form-control form-control-color" id="gradientColor2" value="#ffffff" title="Choose color for the gradient">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Simple Colour -->
+                    <div id="simplColour" style="display:none;">
+                        <div class="row g-2 align-items-center">
+                            <div class="col-auto">
+                                <label class="form-label" for="simpleBgColour">Simple Background Color:</label>
+                                <input type="color" class="form-control form-control-color" id="simpleBgColour" value="#ffffff" title="Choose color for the background">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- extra Settings -->
+                <div id="extraSettings" class="mb-3">
+                    <h6 class="fw-bold">Extra Settings:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="midTwist" id="midTwist">
+                        <label class="form-check-label" for="midTwist">allow drawing for a mid-frequency twist</label>
+                    </div>
+                </div>
+                <div id="extraSquare" class="mb-3" style="display:none;">
+                    <h6 class="fw-bold">Extra Settings:</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="squareBig" id="squareBig">
+                        <label class="form-check-label" for="squareBig">allow squares to be bigger</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Save and Start Button -->
+            <button class="btn btn-primary" id="configureButton" style="display:none;" disabled>Save and Start</button>
+        </div>
+    </div>
+
+    <!-- Include your main.js file for handling user interaction -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
