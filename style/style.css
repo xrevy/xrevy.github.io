@@ -148,10 +148,49 @@ h1 {
 
 .zoom-img:hover > img {
     transform: scale(1.2);
+    
+}
+
+.modal-content {
+    background-color: transparent !important;
+    border: none !important;
 }
 
 .bigger-image {
     scale: 1.7;
     display: block;
     margin: 180px auto;
+    color: transparent;
+}
+
+.carousel-item img,
+.carousel-item iframe {
+    width: 100%;
+    height: auto;
+    max-height: 700px; /* Adjust as necessary */
+    object-fit: contain;
+}
+
+
+.ratio-16x9 {
+    position: relative;
+    width: 100%;
+}
+
+.ratio-16x9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-inner {
+    width: 80% !important;
 }
