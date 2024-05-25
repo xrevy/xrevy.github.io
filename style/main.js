@@ -85,3 +85,10 @@ $(function() {
         $('#imagemodal').modal('hide');   
     });		
 });
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(event) {
+      event.preventDefault();
+    });
+  });
